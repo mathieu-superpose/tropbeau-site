@@ -1,52 +1,138 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Chouette!!</title>
-		<link rel="icon" type="image/png" href="img/icon.png" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Trop Beau Site</title>
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/night.css" id="theme">
+    <link rel="stylesheet" href="plugin/monokai.css" id="highlight-theme">
+</head>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/night.css" id="theme">
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide intro -->
+            <section id="home" data-transition="fade-in">
+                <section id="home_welcome">
+                    <img src="img/profil.jpg" alt="picture of a man with moustache and sunglasses" target="_blank" style="border-radius:50%;">
+                    <h1>Trop beau</h1>
+                </section>
+                <section id="home_index">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#work">Personal Projects</a></li>
+                        <li><a href="#integrations">Integrations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </section>
+            </section>
+            <!-- Slide presentation -->
+            <section id="about" data-transition="fade-in">
+                <section id="about_title">
+                    <h2>About me</h2>
+                </section>
+                <section id="about_profile">
+                    <h3>Who I am</h3>
+                    <p><small>I'm a Web Developer currently based in 🇫🇷 Besançon with a background in <a href="https://www.institut-mermoz.com/" target="_blank">Aeronautics</a> 🚁 and <a href="https://www.glion.edu/" target="_blank">Hospitality</a> 🇨🇭🏨🇺🇸 </small></p>
+                    <p><small>For the past year, I learnt coding with <a href="https://www.thehackingproject.org/" target="_blank">The Hacking Project</a> 👨‍💻 (more about my focus and learnings here).</small></p>
+                    <p><small>I am currently seeking for a job, so if you want to know more about me, access my <a href="#/about_online">profile</a> over other sites, or write me an <a href="#contact">email</a>.</small></p>
+                </section>
+                <section id="about_devpath">
+                    <h3>Development Path</h3>
+                    <div style="display:flex;justify-content:center;column-gap:2rem;">
+                        <div style="width:30%;font-size:1rem;">
+                            <h4>The Hacking Project:<br>Introduction</h4>
+                            <p>3 weeks introduction to code and peer learning</p>
+                            <ul>
+                                <li>HTML+CSS+Bootstrap</li>
+                                <li>Terminal+Git</li>
+                                <li>Ruby: kata, scraping, unit testing</li>
+                            </ul>
+                        </div>
+                        <div style="width:30%;font-size:1rem;">
+                            <h4>The Hacking Project:<br>Fullstack Ruby</h4>
+                            <p>9 weeks of Rails and Vanilla Javascript validated by a jury certified final project</p>
+                            <ul>
+                                <li>OOP concept</li>
+                                <li>Databases: SQL and activerecords</li>
+                                <li>Rails: CRUD, authentification (Devise), mailer, deployment, Asset Pipeline & Active Storage</li>
+                                <li>Javascript: kata, DOM, AJAX</li>
+                                <li>Frontend: CSS, atomic design</li>
+                                <li>Final Project: Web App in Rails: dynamic (promotions) restaurant menu platform</li>
+                            </ul>
+                        </div>
+                        <div style="width:30%;font-size:1rem;">
+                            <h4>The Hacking Project:<br>Frontend React</h4>
+                            <p>12 weeks of Javascript and React validated by a jury certified final project</p>
+                            <ul>
+                                <li>Algorithmic: recursion, complexity, binary trees</li>
+                                <li>React: state, lifecycle, conditional rendering, local storage, dynamic routing, redux</li>
+                                <li>Rails: API</li>
+                                <li>Final Project: Next.js + Rails API Web App: on-demand platform for temporay position in the hospitatlity industry</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section id="about_online">
+                    <h3>Find me online</h3>
+                    <ul style="list-style: none;">
+                        <li><a href="https://www.codewars.com/users/mathieu-superpose/" target="_blank">Code Wars</a></li>
+                        <li><a href="https://www.frontendmentor.io/profile/mathieu-superpose/" target="_blank">Frontend Mentor</a></li>
+                        <li><a href="https://github.com/mathieu-superpose/" target="_blank">Github</a></li>
+                        <li><a href="https://twitter.com/mathieu__joly/" target="_blank">Twitter</a></li>
+                        <li><a href="https://www.linkedin.com/in/mathieu--joly/" target="_blank">Linkedin</a></li>
+                    </ul>
+                </section>
+            </section>
+            <!-- Slide personal projects -->
+            <section id="work" data-transition="fade-in">
+                <section id="work_title">
+                    <h2>Personal Projects</h2>
+                </section>
+                <section id="work_brad">
+                    <h3>Brad Gravity</h3>
+                    <img class="r-stretch" data-src="img/projects/homescreen.png">
+                    <p>An underwork Rad Gravity Clone, built with Kaboom.js</p>
+                </section>
+            </section>
+            <!-- Slide integration -->
+            <section id="integrations" data-transition="fade-in">
+                <section id="integrations_title">
+                    <h2>Integrations</h2>
+                </section>
+                <section id="integrations_blogr">
+                    <h3>Frontend Mentor:<br>Blogr landing page</h3>
+                    <a href="https://github.com/mathieu-superpose/blogr-landing-page" target="_blank">
+                        <img class="r-stretch" src="./img/integrations/blogr.png" alt="orange themed website screencapture">
+                    </a>   
+                </section>
+            </section>
+            <!-- Slide contact -->
+            <section id="contact" data-transition="fade-in">
+                <h2>Contact</h2>
+                <a href="mailto:vraiment@tropbeau.site">vraiment@tropbeau.site</a>
+            </section>
+        </div>
+    </div>
+    <script src="dist/reveal.js"></script>
+    <script>
+    Reveal.initialize({
+        hash: true,
+        progress: false,
+        controlsLayout: 'edges',
+        overview: false,
+        touch: true,
+        loop: true,
+        help: false,
+        mouseWheel: true,
+        hideInactiveCursor: true,
+        hideCursorTime: 500,
+    });
+    </script>
+</body>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-<!-- Slide intro -->
-				<section>
-				<img src="img/profil.png">
-				<h1>Trop beau</h1>
-				</section>
-<!-- Slide contact -->
-				<section>
-				<a href="mailto:vraiment@tropbeau.site">vraiment@tropbeau.site</a>
-				</section>
-<!-- Slide video -->
-				<section>
-					<div style="padding:56.20% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/68814867?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-				</section>
-			</div>
-		</div>
-		
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes.js"></script>
-		<script src="plugin/markdown.js"></script>
-		<script src="plugin/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
